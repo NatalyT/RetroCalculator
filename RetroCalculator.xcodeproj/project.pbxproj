@@ -15,6 +15,9 @@
 		C1E52A48202CD712006D91F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E52A46202CD712006D91F6 /* LaunchScreen.storyboard */; };
 		C1E52A53202CD712006D91F6 /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E52A52202CD712006D91F6 /* RetroCalculatorTests.swift */; };
 		C1E52A5E202CD712006D91F6 /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E52A5D202CD712006D91F6 /* RetroCalculatorUITests.swift */; };
+		C1E52A6E20307175006D91F6 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1E52A6D20307175006D91F6 /* Minecraft.ttf */; };
+		C1E52A6F20307175006D91F6 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1E52A6D20307175006D91F6 /* Minecraft.ttf */; };
+		C1E52A7020307175006D91F6 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1E52A6D20307175006D91F6 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		C1E52A59202CD712006D91F6 /* RetroCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E52A5D202CD712006D91F6 /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
 		C1E52A5F202CD712006D91F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E52A6D20307175006D91F6 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E52A3A202CD712006D91F6 /* AppDelegate.swift */,
+				C1E52A6D20307175006D91F6 /* Minecraft.ttf */,
 				C1E52A3C202CD712006D91F6 /* ViewController.swift */,
 				C1E52A3E202CD712006D91F6 /* Main.storyboard */,
 				C1E52A44202CD712006D91F6 /* Assets.xcassets */,
@@ -237,6 +242,7 @@
 			files = (
 				C1E52A48202CD712006D91F6 /* LaunchScreen.storyboard in Resources */,
 				C1E52A45202CD712006D91F6 /* Assets.xcassets in Resources */,
+				C1E52A6E20307175006D91F6 /* Minecraft.ttf in Resources */,
 				C1E52A40202CD712006D91F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E52A6F20307175006D91F6 /* Minecraft.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E52A7020307175006D91F6 /* Minecraft.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
