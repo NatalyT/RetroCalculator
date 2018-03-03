@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         case Add = "+"
         case Empty = "Empty"
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,8 +48,19 @@ class ViewController: UIViewController {
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
         
-        runningNumber += "\(sender.tag)"
-        outputLbl.text = runningNumber
+        //runningNumber += "\(sender.tag)"
+        //outputLbl.text = runningNumber
+        
+        if runningNumber == "" && sender.tag == 0 && leftValString == "" {
+            runningNumber = ""
+            outputLbl.text = "0"
+        } else if runningNumber == "" && sender.tag == 0 && rightValString == "" {
+            runningNumber = ""
+            outputLbl.text = "0"
+        } else {
+            runningNumber += "\(sender.tag)"
+            outputLbl.text = runningNumber
+        }
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
@@ -70,6 +81,16 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
+    }
+    
+    @IBAction func onClearPressed(_ sender: Any) {
+        playSound()
+        outputLbl.text = "0"
+        runningNumber = ""
+        leftValString = ""
+        rightValString = ""
+        result = ""
+        currentOperation = Operation.Empty
     }
     
     func playSound() {
@@ -99,11 +120,9 @@ class ViewController: UIViewController {
                 } else if currentOperation == Operation.Add {
                     result = "\(Double(leftValString)! + Double(rightValString)!)"
                 }
-                
                 leftValString = result
                 outputLbl.text = result
             }
-            
             currentOperation = operation
         } else {
             // This is the first time an operator has been pressed
